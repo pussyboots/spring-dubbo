@@ -1,3 +1,4 @@
+
 *.class
 
 #package file
@@ -15,6 +16,7 @@ target/
 .settings/
 .project
 .classpatch
+.classpath
 
 #idea
 .idea/

@@ -15,10 +15,14 @@
 		>
 
 	<dubbo:application name="hello-world-app"  />
-	<dubbo:protocol name="dubbo" port="20880" />
+	 <dubbo:protocol name="dubbo" port="20880" /> 
+	
+	<dubbo:registry address="zookeeper://localhost:2181" />
+
+	<!-- registry="N/A" -->
 
 	<!-- 声明需要暴露的服务接口-->
-	<dubbo:service registry="N/A"
+	<dubbo:service 
 				   interface="com.qingwu.ServiceApi"
 				   ref="serviceApi" />
 
